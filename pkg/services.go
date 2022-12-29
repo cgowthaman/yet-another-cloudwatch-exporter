@@ -506,7 +506,7 @@ var (
 			Namespace: "AWS/KafkaConnect",
 			Alias:     "kafkaconnect",
 			ResourceFilters: []*string{
-				aws.String("kafkaconnect"),
+				aws.String("kafka:cluster"),
 			},
 			DimensionRegexps: []*string{
 				aws.String(":connector/(?P<Connector_Name>[^/]+)"),
